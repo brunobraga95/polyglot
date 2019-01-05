@@ -1,0 +1,36 @@
+.App {
+  text-align: center;
+}
+
+.word {
+  width: 100%;
+  text-align: center;
+  color: #F00;
+  font-size: 25px;
+}
+
+.add-sentence-wrapper {
+  padding: 0px 24px 24px 24px;
+}
+
+.add-sentence-button-wrapper {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.word-type-wrapper {
+  margin-top: 48px;
+}
+
+.word-type-buttons-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  margin: auto;
+  justify-content: space-around
+}
+
+.word-type-buttons-wrapper > button {
+  margin-bottom: 10px;
+}
