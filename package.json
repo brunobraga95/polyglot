@@ -4,7 +4,6 @@
   "private": true,
   "dependencies": {
     "@material-ui/core": "^3.8.1",
-    "dotenv-webpack": "^1.6.0",
     "express": "^4.16.4",
     "express-favicon": "^2.0.1",
     "firebase": "^5.5.5",
@@ -28,8 +27,5 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ],
-  "devDependencies": {
-    "react-app-rewired": "^2.0.1"
-  }
+  ]
 }
