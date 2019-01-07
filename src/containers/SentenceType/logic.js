@@ -1,3 +1,4 @@
+import { isSentenceValid } from '../../helpers';
 
 export const shuffle = (words, offset = 0) => {
   for(let i = words.length - 1; i >= offset; i--) {
@@ -32,10 +33,6 @@ export const decreaseRevealsRate = (sentecesList, pos) => {
   sentecesList[pos].revealsUsageRate--;
   return sentecesList;
 }
-
-//TODO fix these naming, its awfull
-const isSentenceValid = (sentence) =>
-  sentence.sentence !== undefined && sentence.translations !== undefined && sentence.translations.german !== undefined  
 
 export const sentencesListAdapater = (sentences) => {
   const filteredUndefined = sentences.filter((sentence) => isSentenceValid(sentence));

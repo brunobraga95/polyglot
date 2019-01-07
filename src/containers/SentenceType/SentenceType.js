@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from '@material-ui/core/Button';
 import AddWord from '../../components/AddWord';
+import SentencesListDialog from '../../components/SentencesListDialog';
 import WordMatch from '../../components/WordMatch';
 
 import { getSentencesList, updateRevealsUsage } from '../../db/firestore/firestore';
@@ -78,7 +79,8 @@ export class SentenceType extends React.PureComponent {
           <div className="word-type-buttons-wrapper">
             <Button onClick={this.onRevealTranslations} variant="contained" color="primary">Reveal</Button>
             <Button onClick={this.onAddSentenceClick} variant="contained" color="primary">add new word</Button>
-          </div>   
+          </div>
+          <SentencesListDialog />
         </div>
       ) 
     } else return <div>loading</div>
